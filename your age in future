@@ -1,0 +1,26 @@
+yearage=int(input("Enter your age/birth of year"))
+
+isage = False
+
+isyear = False
+
+if yearage < 125:
+    isage = True
+
+elif len(str(yearage)) == 4:   # when it will true it do not check other elif  
+    isyear = True
+
+else:
+    print("some problem with your age/birth")
+    exit()
+
+if yearage < 1900 and isyear:
+    print("omg oldest person")
+    exit()
+    
+elif isage:
+    yearage = 2020-yearage
+
+print(f"your age will be 100 in { yearage + 100 } ")
+
+
